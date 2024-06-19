@@ -8,20 +8,7 @@
     Shell.FlyoutBehavior="Disabled"
     Title="BLOGSOCIALUDLA">
 
-    <!--<ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate views:LoginView}"
-        Route="MainPage" 
-        
-        
-        />
-    <ShellContent
-    Title="Galeria"
-    ContentTemplate="{DataTemplate views:GaleriaServicios}"
-    Route="MainPage" 
-    
-    
-    />-->
+     
     <ShellItem Route="MainPage">
         <ShellSection Title="Home">
             <ShellContent ContentTemplate="{DataTemplate views:LoginView}" />

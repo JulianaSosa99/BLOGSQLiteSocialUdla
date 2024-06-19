@@ -4,6 +4,9 @@
              x:Class="BLOGSOCIALUDLA.Views.PaginaPrincipal"
              Title="Página Principal" BackgroundColor="White">
 
+    <ScrollView>
+        
+  
     <Grid>
         <VerticalStackLayout 
             HorizontalOptions="CenterAndExpand" 
@@ -82,22 +85,43 @@
             </Frame>
 
             <!-- Botón para ir al perfil de usuario -->
-            <Button 
-                Text="Ir a mi perfil" 
-                FontSize="18"
-                FontFamily="Poppins-SemiBold"
-                TextColor="White"
-                BackgroundColor="DarkRed"
-                CornerRadius="20"
-                HorizontalOptions="Center"
-                VerticalOptions="End"
-                Clicked="IrPerfilButton_Clicked" />
+         
+                <Button 
+                 Text="Ir a mi perfil" 
+                 FontSize="18"
+                 FontFamily="Poppins-SemiBold"
+                 TextColor="White"
+                 BackgroundColor="DarkRed"
+                 CornerRadius="20"
+                 HorizontalOptions="Center"
+                 VerticalOptions="End"
+                 Clicked="IrPerfilButton_Clicked"
+                 Margin="0,0,0,20"/>
 
-            <Image
+                <StackLayout>
+                    <Grid 
+              WidthRequest="350"
+              HeightRequest="40"
+              Margin="0,0,0,40">
+                        <Label Text="Cerrar Sesión"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   FontFamily="PoppinsMedium"
+                   FontSize="13"
+                   TextColor="DarkRed"
+                   TextDecorations="Underline" />
+                   <Button BackgroundColor="Transparent"
+                    Clicked="ClickCerrarSesion"
+                    WidthRequest="350"
+                    HeightRequest="40" />
+                    </Grid>
+                </StackLayout>
+                <Image
                 Source="https://media.primicias.ec/2022/02/04094454/RGB_LOGO-UDLA_2021_ROJO.png"
                 WidthRequest="85"
-                HorizontalOptions="Start"
-                Margin="-80,0,0,0"/>
+                HorizontalOptions="Center"
+                Margin="0,0,0,0"/>
         </VerticalStackLayout>
     </Grid>
+    </ScrollView>
 </ContentPage>

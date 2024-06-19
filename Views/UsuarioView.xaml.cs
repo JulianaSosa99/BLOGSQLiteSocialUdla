@@ -9,14 +9,16 @@ namespace BLOGSOCIALUDLA.Views
     public partial class UsuarioView : ContentPage
     {
         private User _currentUser;
-
+        
         public UsuarioView(string username)
         {
             InitializeComponent();
-            DatosDelUsuario(username);
+           // DatosDelUsuario(username);
+            //_user = new User();
+          
         }
 
-        private void DatosDelUsuario(string username)
+       /* private void DatosDelUsuario(string username)
         {
             _currentUser = UserData.Users.FirstOrDefault(user => user.Username == username);
 
@@ -31,6 +33,6 @@ namespace BLOGSOCIALUDLA.Views
             {
                 DisplayAlert("Error", "Usuario no encontrado.", "OK");
             }
-        }
+        }*/
     }
 }

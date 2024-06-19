@@ -56,4 +56,9 @@ public partial class PaginaPrincipal : ContentPage
     {
         Navigation.PopAsync();
     }
+
+    private async void ClickCerrarSesion(object sender, EventArgs e)
+    {
+            await Navigation.PushAsync(new LoginView());
+    }
 }

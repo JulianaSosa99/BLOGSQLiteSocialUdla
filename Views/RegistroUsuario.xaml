@@ -35,16 +35,19 @@
                     <Entry x:Name="Nombres"
                            FontFamily="PoppinsMedium"
                            Placeholder="Nombres"
+                           Text="{Binding Nombres}"
                            FontSize="15"
                            Margin="0,0,0,10" />
                     <Entry x:Name="Apellidos"
                            FontFamily="PoppinsMedium"
                            Placeholder="Apellidos"
+                            Text="{Binding Apellidos}"
                            FontSize="15"
                            Margin="0,0,0,10" />
                     <Entry x:Name="NumeroTelefono"
                            FontFamily="PoppinsMedium"
                            Placeholder="Número Celular"
+                           Text="{Binding NumeroTelefono}"
                            Keyboard="Telephone"
                            FontSize="15"
                            Margin="0,0,0,10" />
@@ -52,11 +55,15 @@
                            FontFamily="PoppinsMedium"
                            Placeholder="Correo Electrónico"
                            Keyboard="Email"
+                           Text="{Binding Email}"
+                           
                            FontSize="15"
                            Margin="0,0,0,10" />
                     <Entry x:Name="Contrasena"
                            FontFamily="PoppinsMedium"
                            Placeholder="Contraseña"
+                           Text="{Binding Password}"
+                           
                            IsPassword="True"
                            FontSize="15"
                            Margin="0,0,0,20" />

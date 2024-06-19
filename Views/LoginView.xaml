@@ -2,7 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BLOGSOCIALUDLA.Views.LoginView"
-             Title="Login">
+             Title="Login"
+             NavigationPage.HasNavigationBar="False"
+             >
     
     <Grid RowDefinitions=".3*,.4*" Margin="0">
         <Image Aspect="AspectFill" Source="https://arquitecturapanamericana.com/wp-content/uploads/2017/03/FOTOGRAFIA-SELECCIONADA-106.jpg"></Image>
@@ -65,19 +67,27 @@
                      Margin="0,0,0,2"
 
                    />
-                
-                <Button BackgroundColor="Grey"           
-                 WidthRequest="350"
-                 HeightRequest="40"
-                 FontFamily="PoppinsMedium" 
-                 FontSize="13"
-                 Text="Registrate"
-                 Clicked="ClickRegistro"
-                 TextColor="White"
-                 Margin="0,0,0,40"
-          
-                 >  
-                </Button>
+
+
+
+                <StackLayout>
+                    <Grid BackgroundColor="Transparent"
+              WidthRequest="350"
+              HeightRequest="40"
+              Margin="0,0,0,40">
+                        <Label Text="Registrate"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   FontFamily="PoppinsMedium"
+                   FontSize="13"
+                   TextColor="DarkSlateGrey"
+                   TextDecorations="Underline" />
+                        <Button BackgroundColor="Transparent"
+                    Clicked="ClickRegistro"
+                    WidthRequest="350"
+                    HeightRequest="40" />
+                    </Grid>
+                </StackLayout>
             </VerticalStackLayout>
            
 
